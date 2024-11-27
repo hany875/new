@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Akatsuki</title>
+    <style>
+        /* General page styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #2C3E50;
+            color: #ECF0F1;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Styling the header */
+        h1 {
+            font-size: 3em;
+            margin-top: 50px;
+            color: #E74C3C;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        h3 {
+            font-size: 1.4em;
+            margin: 20px auto;
+            width: 80%;
+            line-height: 1.6;
+            color: #BDC3C7;
+        }
+
+        /* Adding some space and styling to the list of members */
+        ol {
+            text-align: left;
+            font-size: 1.2em;
+            margin: 20px auto;
+            width: 60%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        /* Adding hover effects on the list items */
+        li:hover {
+            color: #E74C3C;
+            cursor: pointer;
+        }
+
+        /* Style for the horizontal rule */
+        hr {
+            border: 0;
+            height: 2px;
+            background-color: #E74C3C;
+            margin: 40px 0;
+        }
+
+        /* Styling for the footer or bottom text */
+        footer {
+            font-size: 1.1em;
+            color: #BDC3C7;
+            margin: 30px 0;
+            text-align: center; /* Center the footer content */
+        }
+
+        /* Optional additional styling for sections */
+        section {
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        // Step 1: Valid username-password pairs
+        var validCredentials = [
+            { username: "hany", password: "nishitha2013" },
+            { username: "rishabh", password: "rishabh" },
+            { username: "fezzan", password: "fezzan" },
+            { username: "adolson", password: "adolson" },
+            { username: "nethwik", password: "nethwik" },
+            { username: "sreehari", password: "sreehari" }
+            { username: "deva", password: "e" }
+        ];
+
+        // Step 2: Login Prompt
+        var loginUsername = prompt("Enter your username to login:");
+        var loginPassword = prompt("Enter your password to login:");
+
+        // Step 3: Check login credentials
+        var isValidLogin = false;
+        for (var i = 0; i < validCredentials.length; i++) {
+            if (loginUsername === validCredentials[i].username && loginPassword === validCredentials[i].password) {
+                isValidLogin = true;
+                break; // Exit loop if valid credentials are found
+            }
+        }
+
+        if (isValidLogin) {
+            // If login is successful, show the content of the page
+            document.body.innerHTML = `
+                <center>
+                    <h1>The Akatsuki</h1>
+                    <h3>The Akatsuki's main objective is to sabotage and infiltrate other associations. We also assassinate people.<br>Our main enemy association is The Hacking Association.</h3>
+                    <h3>So far, we have a spy in 6D to watch over The Hacking Association's movements.</h3>
+                </center>
+                <hr>
+                <center>
+                    <section>
+                        <h2>The Members</h2>
+                        <ol>
+                            <li>Hany Shahis</li>
+                            <li>Rishabh Deepak</li>
+                            <li>Mohammed Fezzan</li>
+                            <li>Adolson Prajesh</li>
+                            <li>Nethwik Madhu</li>
+                            <li>Sreehari</li>
+                        </ol>
+                        <hr>
+                        <h2>The Hacking Association</h2>
+                        <h3>The Hacking Association is a secretive and skilled group focused on cyber warfare. They specialize in hacking, data theft, and digital espionage, making them a dangerous enemy to The Akatsuki. With their expertise in technology, they infiltrate systems and disrupt operations, always staying one step ahead.</h3>
+                        <hr>
+                    </section>
+                </center>
+                <footer>
+                    <p>&copy; 2024 The Akatsuki. All rights reserved.</p>
+                </footer>
+            `;
+        } else {
+            alert("Invalid username or password. Click Ok To Continue");
+            window.close();
+        }
+    </script>
+</body>
+</html>
