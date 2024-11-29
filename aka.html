@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Akatsuki</title>
     <style>
-        /* General page styling */
         body {
             font-family: 'Arial', sans-serif;
             background-color: #2C3E50;
@@ -14,7 +11,6 @@
             padding: 0;
         }
 
-        /* Styling the header */
         h1 {
             font-size: 3em;
             margin-top: 50px;
@@ -30,7 +26,6 @@
             color: #BDC3C7;
         }
 
-        /* Adding some space and styling to the list of members */
         ol {
             text-align: left;
             font-size: 1.2em;
@@ -45,13 +40,11 @@
             margin: 10px 0;
         }
 
-        /* Adding hover effects on the list items */
         li:hover {
             color: #E74C3C;
             cursor: pointer;
         }
 
-        /* Style for the horizontal rule */
         hr {
             border: 0;
             height: 2px;
@@ -59,22 +52,13 @@
             margin: 40px 0;
         }
 
-        /* Styling for the footer or bottom text */
         footer {
             font-size: 1.1em;
             color: #BDC3C7;
             margin: 30px 0;
-            text-align: center; /* Center the footer content */
+            text-align: center;
         }
 
-        /* Image styling */
-        img {
-            max-width: 100%;
-            height: auto;
-            margin: 20px 0;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-        }
 
         section {
             margin-bottom: 50px;
@@ -92,8 +76,8 @@
             { username: "nethwik", password: "nethwik" },
             { username: "sreehari", password: "sreehari" },
             { username: "deva", password: "e" },
-            { username: "marck69", password: "banana69"},
-            { username: "king_69", password: "12345"},
+            { username: "marck69", password: "banana69" },
+            { username: "king_69", password: "12345" },
         ];
 
         var loginUsername = prompt("Enter your username to login:");
@@ -103,12 +87,11 @@
         for (var i = 0; i < validCredentials.length; i++) {
             if (loginUsername === validCredentials[i].username && loginPassword === validCredentials[i].password) {
                 isValidLogin = true;
-                break; // Exit loop if valid credentials are found
+                break;
             }
         }
 
         if (isValidLogin) {
-            // If login is successful, show the content of the page
             document.body.innerHTML = `
                 <center>
                     <h1>The Akatsuki</h1>
@@ -132,10 +115,9 @@
                         <h3>The Hacking Association is a secretive and skilled group focused on cyber warfare. They specialize in hacking, data theft, and digital espionage. With their expertise in technology, they are a powerful ally to The Akatsuki.</h3>
                         <hr>
                         <h2>The Hojo And Bankar Foundation</h2>
-                        <h3>The Hojo and Bankar Foundation was established in honor of two remarkable men, Hojo and Bankar, whose visionary leadership and contributions left an indelible mark on their community. Renowned for their wisdom, courage, and unwavering commitment to justice, they were admired and respected by many. Tragically, their lives were cut short when they were mercilessly killed by Nethwik, an act of betrayal that shocked and saddened all who knew them. Despite their untimely demise, the foundation seeks to carry forward their legacy, preserving their ideals and ensuring their story inspires future generations.</h3
+                        <h3>The Hojo and Bankar Foundation was established in honor of two remarkable men, Hojo and Bankar, whose visionary leadership and contributions left an indelible mark on their community. Renowned for their wisdom, courage, and unwavering commitment to justice, they were admired and respected by many. Tragically, their lives were cut short when they were mercilessly killed by Nethwik, an act of betrayal that shocked and saddened all who knew them. Despite their untimely demise, the foundation seeks to carry forward their legacy, preserving their ideals and ensuring their story inspires future generations.</h3>
                         <hr>
                         <h2>Secret Language</h2>
-                        </center>
                         <h3>
                             A = 1<br>
                             B = 2<br>
@@ -178,4 +160,3 @@
     </script>
 </body>
 </html>
-
